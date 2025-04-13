@@ -53,6 +53,24 @@ const receiverSchema = new mongoose.Schema(
         },
       },
     ],
+        claimedFarmerPosts: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'FarmerPost',
+      },
+    ],
+    claimedRetailerPosts: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'RetailerPost',
+      },
+    ],
+    foodDonationPosts: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'FoodDonationPost',
+      },
+    ],
   },
   { timestamps: true }
 );
