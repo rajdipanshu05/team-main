@@ -53,7 +53,7 @@ const receiverSchema = new mongoose.Schema(
         },
       },
     ],
-        claimedFarmerPosts: [
+    claimedFarmerPosts: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'FarmerPost',
